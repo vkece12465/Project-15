@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #111111;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    overflow-x: auto;
+}
+.navbar .logo-container img {
+    width: 100px;
+}
+.navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+.navbar .list li{
+    cursor: pointer;
+    font-size: 18px;
+}
+.navbar .list li:hover{
+    color: #c91b28;
+}
+
+
+/*---------------------- hero section --------------------*/
+.hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.hero .left-image {
+    margin-top: -80px;
+    margin-left: -140px;
+}
+.hero .left-image img {
+    width: 640px;
+}
+.hero .right-headline {
+    margin-top: 120px;
+}
+.hero .right-headline h4 {
+    color: #c91b28;
+    font-size: 1.4rem;
+}
+.hero .right-headline h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.hero .right-headline p {
+    font-size: 1.2rem;
+    line-height: 22px;
+}
+.hero .right-headline button {
+    background-color:#c91b28;;
+    border: none;
+    color: #FFFFFF;;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.hero .box {
+    position: absolute;
+    background-color: #181818;
+    width: 53rem;
+    height: 960px;
+    left: -200px;
+    top: 560px;
+    z-index: -1;
+}
+
+/*----------------------- service section ----------------------*/
+.serveice-section {
+    margin-top: 100px;
+}
+.serveice-section .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.serveice-section .service-cards .service-card {
+    background-color: #1e1e1e;
+    padding: 40px 50px;
+}
+.serveice-section .service-cards .service-card:nth-child(2) {
+    background-color: #c91b28;;
+}
+.serveice-section .service-cards .service-card h1 {
+    font-weight: 600;
+    margin: 20px 0;
+}
+.serveice-section .service-cards .service-card p {
+    font-size: 1.4rem;
+    color: #cecece;;
+}
+.serveice-section .service-cards .service-card .service-btn i {
+    color: #c91b28;;
+    margin-left: 10px;
+}
+.serveice-section .service-cards .service-card:nth-child(2) .service-btn i {
+    color: #FFFFFF;;
+}
+.serveice-section .service-cards .service-card .service-btn button {
+    color: #c91b28;;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 29px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.serveice-section .service-cards .service-card:nth-child(2) button {
+    color: #FFFFFF;;
+}
+
+.service-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.service-stats .left {
+    flex: 1.2;
+    text-align: center;
+}
+.service-stats .left h1 {
+    color: #c91b28;;
+    font-size: 7rem;
+    font-weight: 900;
+}
+.service-stats .left p {
+    font-size: 2rem;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.service-stats .right {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    flex-wrap: wrap;
+}
+.service-stats .right .card {
+    background-color:#1e1e1e;
+    width: 20rem;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-stats .right .card h1 {
+    color: #c91b28;;
+    font-size: 2.9rem;
+}
+.service-stats .right .card p {
+    color: #cecece;;
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+/*----------------------- project section ---------------------*/
+.featured-projects {
+    margin-top: 200px;
+}
+.featured-projects .project-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+.featured-projects .project-headline h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.featured-projects .project-headline p {
+    padding-top: 14px;
+    color: #cecece;;
+    padding-bottom: 12px;
+}
+.featured-projects .project-headline button {
+    background-color: #c91b28;;
+    color: #FFFFFF; ;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+}
+.featured-projects .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+}
+.featured-projects .project-cards .project-card .project-img {
+    background-color: #1e1e1e;
+    width: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.featured-projects .project-cards .project-card h1 {
+    padding: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.featured-projects .project-cards .project-card span {
+    color: #c91b28;;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.featured-projects .project-cards .project-card span button {
+    color: #c91b28;;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+.featured-projects .project-cards .project-card img {
+    width: 30rem;
+}
+
+
+/*----------------------- contact section --------------------*/
+.contact-section {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 0 80px;
+}
+.contact-section .contact-card {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 40px;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+}
+.contact-section .contact-card .left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.contact-section .contact-card .left p {
+    color: #cecece;;
+}
+.contact-section .contact-card .right {
+    padding-right: 100px;
+}
+.contact-section .contact-card .right button {
+    background-color: #c91b28;;
+    color: #FFFFFF;;
+    border: none;
+    padding: 18px 60px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/*----------------------- footer nav --------------------------*/
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    padding: 0 80px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+.footer {
+    max-width: 80rem;
+    margin: 0 200px;
+}
+.footer img {
+    width: 100px;
+}
+.footer-wrapper .social-icons {
+    text-align: center;
+    margin-left: 180px;
+}
+.footer-wrapper .social-icons i {
+    font-size: 30px;
+    margin-left: 70px;
+}
+.fa-facebook-f{
+    color: #4267B2;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-youtube{
+    color: #FF0000;
+}
+/************Media queris 440********/
+@media screen and (max-width:440px) {
+    body, html{
+      width: 100vw;
+      margin-right: 20px;
+      padding: 0;
+      overflow-x:hidden;
+  }
+  .navbar {
+    height: 15vh;
+    overflow-x: auto;
+}
+.navbar .logo-container img {
+    width: 100px;
+    margin-left: 10px;
+}
+.navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.hero {
+    flex-wrap: wrap;
+    height: 120vh;
+}
+.hero .left-image {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.hero .left-image img {
+    width: 350px;
+}
+.hero .right-headline {
+    margin-top: -220px;
+}
+.hero .right-headline h4 {
+    color: #c91b28;
+    margin-top: -120px;
+    font-size: 1rem;
+}
+.hero .right-headline h1 {
+    font-size: 2rem;
+
+    width: 300px;
+}
+.hero .right-headline p {
+    font-size: 1rem;
+    line-height: 22px;
+    width: 350px;
+}
+.hero .box {
+    top: 730px;
+}
+.serveice-section{
+    margin-top: -190px;
+}
+.serveice-section .service-cards {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px 40px 0px 20px;
+}
+.serveice-section .service-cards .service-card {
+    padding: 20px 40px;
+}
+.serveice-section .service-cards .service-card p {
+    font-size: 1rem;
+}
+.serveice-section .service-cards .service-card .service-btn button {
+    margin-top: 29px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.service-stats .left {
+    margin-left: 20px;
+    flex: 1.2;
+    text-align: center;
+}
+.service-stats .left h1 {
+    font-size: 3rem;
+
+}
+
+.service-stats .left p {
+    font-size: 2rem;
+}
+.service-stats .right .card {
+    width: 10rem;
+}
+.service-stats .right .card h1 {
+    color: #c91b28;;
+    font-size: 2rem;
+}
+.service-stats .right .card p {
+    color: #cecece;;
+    font-size: 17px;
+    padding-top: 5px;
+}
+/*----------------------- project section ---------------------*/
+.featured-projects {
+    margin-top: 150px;
+    margin-left: 10px;
+}
+.featured-projects .project-headline {
+    flex-direction: column;
+    padding: 0 80px;
+
+}
+.featured-projects .project-headline h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.featured-projects .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+}
+.featured-projects .project-cards .project-card .project-img {
+    background-color: #1e1e1e;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.featured-projects .project-cards .project-card img {
+    width: 19rem;
+}
+.featured-projects .project-cards .project-card h1 {
+    padding: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.featured-projects .project-cards .project-card span {
+    justify-content: center;
+}
+
+/*----------------------- contact section --------------------*/
+.contact-section {
+    padding: 0 40px;
+    margin: 150px 20px 40px 0px;
+}
+.contact-section .contact-card {
+    padding: 70px 60px;
+    height: 250px;
+}
+.contact-section .contact-card .left h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.contact-section .contact-card .left p {
+    color: #cecece;;
+    margin-bottom: 20px;
+}
+.contact-section .contact-card .right {
+    padding-right: 0px;
+}
+/*----------------------- footer nav --------------------------*/
+.footer-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+.footer {
+    max-width: 100%;
+    margin: 40px;
+}
+.footer img {
+    width: 100px;
+}
+.footer-wrapper .social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+.footer-wrapper .social-icons i {
+    font-size: 20px;
+    margin-right: -30px;
+}
+}
+
+/********Land Scape mode**********/
+@media screen and (max-width:916px) and (orientation: landscape){
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+        padding: 0;
+    }
+    body, html{
+        width: 100vw;
+        margin-right: 20px;
+        padding: 0;
+        overflow-x:hidden;
+    }
+    .navbar {
+        margin-top: 20px;
+      height: 10vh;
+      overflow-x: auto;
+  }
+  .navbar .logo-container img {
+      width: 100px;
+      margin-left: 10px;
+  }
+  .navbar .list {
+      list-style-type: none;
+      display: flex;
+      gap: 60px;
+      margin-top: 20px;
+      margin-right: 60px;
+  }
+  .hero {
+      flex-wrap: wrap;
+      height: 100vh;
+  }
+  .hero .left-image {
+      margin-top: 10px;
+      margin-left: -180px;
+  }
+  .hero .left-image img {
+      width: 340px;
+  }
+  .hero .right-headline {
+      margin-top: 60px;
+  }
+  .hero .right-headline h1 {
+      font-size: 2rem;
+      width: 300px;
+  }
+  .hero .right-headline p {
+      font-size: 1rem;
+      line-height: 22px;
+      width: 350px;
+  }
+  .serveice-section{
+      margin-top: 100px;
+  }
+  .serveice-section .service-cards {
+    flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 50rem;
+      gap: 80px;
+      margin: 0px 40px 0px 0px;
+  }
+
+  .serveice-section .service-cards .service-card p {
+      font-size: 1rem;
+  }
+  .service-stats .left {
+      margin-left: 20px;
+      flex: 1.2;
+      text-align: center;
+  }
+  .service-stats .left h1 {
+      font-size: 3rem;
+  }
+  .service-stats .left p {
+      font-size: 2rem;
+  }
+  .service-stats .right .card {
+      width: 20rem;
+      flex-wrap: wrap;
+  }
+
+  /*----------------------- project section ---------------------*/
+  .featured-projects {
+      margin-top: 150px;
+      margin-left: -20px;
+  }
+  .featured-projects .project-headline {
+      flex-direction: column;
+      padding: 0 80px;
+  }
+  .featured-projects .project-headline h1 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: 900;
+  }
+  .featured-projects .project-cards {
+      flex-wrap: wrap;
+      gap: 38px;
+      width: 50rem;
+  }
+  .featured-projects .project-cards .project-card .project-img {
+      background-color: #1e1e1e;
+      width: 20rem;
+      height: 250px;
+  }
+  .featured-projects .project-cards .project-card img {
+      width: 19rem;
+  }
+  .featured-projects .project-cards .project-card h1 {
+      padding: 20px 0 10px 0;
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-align: center;
+  }
+  .featured-projects .project-cards .project-card span {
+      justify-content: center;
+  }
+
+  /*----------------------- contact section --------------------*/
+  .contact-section {
+      padding: 0 40px;
+      margin: 150px 150px 40px 0px;
+  }
+  .contact-section .contact-card {
+      padding: 70px 60px;
+      height: 250px;
+  }
+  .contact-section .contact-card .left h1 {
+      font-size: 2rem;
+  }
+  .contact-section .contact-card .left p {
+      margin-bottom: 20px;
+
+  }
+  /*----------------------- footer nav --------------------------*/
+  .footer-nav{
+    margin-right: 90px;
+  }
+
+  .footer {
+      max-width: 100%;
+      margin: 40px;
+  }
+  .footer img {
+      width: 100px;
+  }
+  .footer-wrapper .social-icons {
+      display: flex;
+      flex-direction: row;
+      margin-left: 40px;
+  }
+  .footer-wrapper .social-icons i {
+      font-size: 25px;
+      margin-right: -10px;
+  }
+}
